@@ -1,0 +1,23 @@
+@startuml
+
+[LED] as LED 
+[BUZZER] as BZ 
+[TIMER] as TI
+[POWER SUPPLY] as PS 
+[MAGNETRON TUBE] as MT 
+[CONTROLLER] as CT 
+[DOOR] as DR 
+[KEYPAD] as KP
+
+interface "Button Press" as BP 
+interface "Display Output" as DO 
+interface "Heat Output" as HO 
+interface "Light" as LI 
+interface "Power" as PW 
+interface "Sound" as SO 
+
+package "Microwave Oven" {
+    LI - [LED] 
+}
+
+@enduml
